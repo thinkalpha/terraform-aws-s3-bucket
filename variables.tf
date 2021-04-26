@@ -153,3 +153,9 @@ variable "restrict_public_buckets" {
   type        = bool
   default     = false
 }
+
+variable "bucket_key_enabled" {
+  description = "Whether or not to use Amazon S3 Bucket Keys for SSE-KMS."
+  type        = bool
+  default     = null
+}
